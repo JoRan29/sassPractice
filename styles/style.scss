@@ -14,43 +14,16 @@ $btnFont: italic bold 12px/30px Georgia, serif;
 $btnBckSize: 200% auto;
 $btnTransition: 0.5s;
 
-// Sass imports!
+// Sass @import! + Sass @extend!
 
 @import "./header";
 
 .contact {
   @include flexCenter(column, #46c3db);
-  color: $textClr;
-  font: $bdyFont;
-  button {
-    font: $btnFont;
-    background-size: $btnBckSize;
-    background-image: $primaryBtn;
-    border: $borderBtn;
-    border-radius: $radiusBtn;
-    width: $btnWidth;
-    height: $btnHeight;
-    transition: $btnTransition;
-    &:hover {
-      background-position: right center;
-    }
-  }
+  @extend header;
 }
 
 .info {
   @include flexCenter(column, #f3f169);
-  color: $textClr;
-  font: $bdyFont;
-  button {
-    font: $btnFont;
-    background-size: $btnBckSize;
-    background-image: $primaryBtn;
-    border: $borderBtn;
-    border-radius: $radiusBtn;
-    width: $btnWidth;
-    height: $btnHeight;
-    &:hover {
-      background-position: right center;
-    }
-  }
+  @extend .contact;
 }
