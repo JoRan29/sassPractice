@@ -1,0 +1,56 @@
+// Sass variables!
+
+// body variables
+$textClr: rgb(44, 44, 44);
+$bdyFont: bold 20px/50px Georgia, serif;
+
+// btn variables
+$primaryBtn: linear-gradient(to right, #02aab0 0%, #00cdac 51%, #02aab0 100%);
+$borderBtn: 2px solid rgba(55, 90, 206, 0.801);
+$radiusBtn: 10px;
+$btnWidth: 15%;
+$btnHeight: 8%;
+$btnFont: italic bold 12px/30px Georgia, serif;
+$btnBckSize: 200% auto;
+$btnTransition: 0.5s;
+
+// Sass imports!
+
+@import "./header";
+
+.contact {
+  @include flexCenter(column, #46c3db);
+  color: $textClr;
+  font: $bdyFont;
+  button {
+    font: $btnFont;
+    background-size: $btnBckSize;
+    background-image: $primaryBtn;
+    border: $borderBtn;
+    border-radius: $radiusBtn;
+    width: $btnWidth;
+    height: $btnHeight;
+    transition: $btnTransition;
+    &:hover {
+      background-position: right center;
+    }
+  }
+}
+
+.info {
+  @include flexCenter(column, #f3f169);
+  color: $textClr;
+  font: $bdyFont;
+  button {
+    font: $btnFont;
+    background-size: $btnBckSize;
+    background-image: $primaryBtn;
+    border: $borderBtn;
+    border-radius: $radiusBtn;
+    width: $btnWidth;
+    height: $btnHeight;
+    &:hover {
+      background-position: right center;
+    }
+  }
+}

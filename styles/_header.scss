@@ -1,0 +1,27 @@
+// Sass Functions!
+@mixin flexCenter($direction, $colorBdy) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: $direction;
+  background: $colorBdy;
+}
+
+header {
+  @include flexCenter(column, #2d6cdf);
+  color: $textClr;
+  font: $bdyFont;
+  button {
+    font: $btnFont;
+    background-size: $btnBckSize;
+    background-image: $primaryBtn;
+    border: $borderBtn;
+    border-radius: $radiusBtn;
+    width: $btnWidth;
+    height: $btnHeight;
+    &:hover {
+      background-position: right center;
+    }
+  }
+}
