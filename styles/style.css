@@ -1,4 +1,4 @@
-header {
+header, .contact, .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +18,7 @@ header {
   font: bold 20px/50px Georgia, serif;
 }
 
-header button {
+header button, .contact button, .info button {
   font: italic bold 12px/30px Georgia, serif;
   background-size: 200% auto;
   background-image: -webkit-gradient(linear, left top, right top, from(#02aab0), color-stop(51%, #00cdac), to(#02aab0));
@@ -29,11 +29,11 @@ header button {
   height: 8%;
 }
 
-header button:hover {
+header button:hover, .contact button:hover, .info button:hover {
   background-position: right center;
 }
 
-.contact {
+.contact, .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,25 +49,6 @@ header button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #46c3db;
-  color: #2c2c2c;
-  font: bold 20px/50px Georgia, serif;
-}
-
-.contact button {
-  font: italic bold 12px/30px Georgia, serif;
-  background-size: 200% auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#02aab0), color-stop(51%, #00cdac), to(#02aab0));
-  background-image: linear-gradient(to right, #02aab0 0%, #00cdac 51%, #02aab0 100%);
-  border: 2px solid rgba(55, 90, 206, 0.801);
-  border-radius: 10px;
-  width: 15%;
-  height: 8%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.contact button:hover {
-  background-position: right center;
 }
 
 .info {
@@ -86,22 +67,5 @@ header button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #f3f169;
-  color: #2c2c2c;
-  font: bold 20px/50px Georgia, serif;
-}
-
-.info button {
-  font: italic bold 12px/30px Georgia, serif;
-  background-size: 200% auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#02aab0), color-stop(51%, #00cdac), to(#02aab0));
-  background-image: linear-gradient(to right, #02aab0 0%, #00cdac 51%, #02aab0 100%);
-  border: 2px solid rgba(55, 90, 206, 0.801);
-  border-radius: 10px;
-  width: 15%;
-  height: 8%;
-}
-
-.info button:hover {
-  background-position: right center;
 }
 /*# sourceMappingURL=style.css.map */
