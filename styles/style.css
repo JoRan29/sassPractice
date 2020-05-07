@@ -68,4 +68,16 @@ header button:hover, .contact button:hover, .info button:hover {
           flex-direction: column;
   background: #f3f169;
 }
+
+span {
+  opacity: 0;
+  -webkit-transition: all 0.4 ease;
+  transition: all 0.4 ease;
+  display: inline-block;
+}
+
+.move {
+  opacity: 1;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
